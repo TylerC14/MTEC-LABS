@@ -21,9 +21,9 @@ paces.updateValue(5.8, forKey: "Fast")
 print(paces)
 
 //:  Imagine the user in question decides not to store "Sprint" as one his/her regular paces. Remove "Sprint" from the dictionary. Print the dictionary.
-if paces.removeValue(forKey: "Sprint") != nil {
-    print(paces)
-}
+paces.removeValue(forKey: "Sprint")
+print(paces)
+
 
 //:  When a user chooses a pace, you want the app to print a statement stating that it will keep him/her on pace. Imagine a user chooses "Medium." Accessing the value from the dictionary, print a statement saying "Okay! I'll keep you at a <INSERT PACE VALUE HERE> minute mile pace."
 if let choose = paces["Medium"] {
