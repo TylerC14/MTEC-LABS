@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FBCCEF7C26EA5403007DB9FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCCEF7B26EA5403007DB9FF /* AppDelegate.swift */; };
+		FBCCEF7E26EA5403007DB9FF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCCEF7D26EA5403007DB9FF /* SceneDelegate.swift */; };
+		FBCCEF8026EA5403007DB9FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCCEF7F26EA5403007DB9FF /* ViewController.swift */; };
+		FBCCEF8326EA5403007DB9FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBCCEF8126EA5403007DB9FF /* Main.storyboard */; };
+		FBCCEF8526EA5404007DB9FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBCCEF8426EA5404007DB9FF /* Assets.xcassets */; };
+		FBCCEF8826EA5404007DB9FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBCCEF8626EA5404007DB9FF /* LaunchScreen.storyboard */; };
+		FBCCEF9326EA5404007DB9FF /* Hobby_TutorialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCCEF9226EA5404007DB9FF /* Hobby_TutorialTests.swift */; };
+		FBCCEF9E26EA5404007DB9FF /* Hobby_TutorialUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCCEF9D26EA5404007DB9FF /* Hobby_TutorialUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FBCCEF8F26EA5404007DB9FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBCCEF7026EA5403007DB9FF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBCCEF7726EA5403007DB9FF;
+			remoteInfo = "Hobby Tutorial";
+		};
+		FBCCEF9A26EA5404007DB9FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBCCEF7026EA5403007DB9FF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBCCEF7726EA5403007DB9FF;
+			remoteInfo = "Hobby Tutorial";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FBCCEF7826EA5403007DB9FF /* Hobby Tutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hobby Tutorial.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBCCEF7B26EA5403007DB9FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FBCCEF7D26EA5403007DB9FF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FBCCEF7F26EA5403007DB9FF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FBCCEF8226EA5403007DB9FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FBCCEF8426EA5404007DB9FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FBCCEF8726EA5404007DB9FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FBCCEF8926EA5404007DB9FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBCCEF8E26EA5404007DB9FF /* Hobby TutorialTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hobby TutorialTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBCCEF9226EA5404007DB9FF /* Hobby_TutorialTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hobby_TutorialTests.swift; sourceTree = "<group>"; };
+		FBCCEF9426EA5404007DB9FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBCCEF9926EA5404007DB9FF /* Hobby TutorialUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hobby TutorialUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBCCEF9D26EA5404007DB9FF /* Hobby_TutorialUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hobby_TutorialUITests.swift; sourceTree = "<group>"; };
+		FBCCEF9F26EA5404007DB9FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FBCCEF7526EA5403007DB9FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBCCEF8B26EA5404007DB9FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBCCEF9626EA5404007DB9FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FBCCEF6F26EA5403007DB9FF = {
+			isa = PBXGroup;
+			children = (
+				FBCCEF7A26EA5403007DB9FF /* Hobby Tutorial */,
+				FBCCEF9126EA5404007DB9FF /* Hobby TutorialTests */,
+				FBCCEF9C26EA5404007DB9FF /* Hobby TutorialUITests */,
+				FBCCEF7926EA5403007DB9FF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FBCCEF7926EA5403007DB9FF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FBCCEF7826EA5403007DB9FF /* Hobby Tutorial.app */,
+				FBCCEF8E26EA5404007DB9FF /* Hobby TutorialTests.xctest */,
+				FBCCEF9926EA5404007DB9FF /* Hobby TutorialUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FBCCEF7A26EA5403007DB9FF /* Hobby Tutorial */ = {
+			isa = PBXGroup;
+			children = (
+				FBCCEF7B26EA5403007DB9FF /* AppDelegate.swift */,
+				FBCCEF7D26EA5403007DB9FF /* SceneDelegate.swift */,
+				FBCCEF7F26EA5403007DB9FF /* ViewController.swift */,
+				FBCCEF8126EA5403007DB9FF /* Main.storyboard */,
+				FBCCEF8426EA5404007DB9FF /* Assets.xcassets */,
+				FBCCEF8626EA5404007DB9FF /* LaunchScreen.storyboard */,
+				FBCCEF8926EA5404007DB9FF /* Info.plist */,
+			);
+			path = "Hobby Tutorial";
+			sourceTree = "<group>";
+		};
+		FBCCEF9126EA5404007DB9FF /* Hobby TutorialTests */ = {
+			isa = PBXGroup;
+			children = (
+				FBCCEF9226EA5404007DB9FF /* Hobby_TutorialTests.swift */,
+				FBCCEF9426EA5404007DB9FF /* Info.plist */,
+			);
+			path = "Hobby TutorialTests";
+			sourceTree = "<group>";
+		};
+		FBCCEF9C26EA5404007DB9FF /* Hobby TutorialUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FBCCEF9D26EA5404007DB9FF /* Hobby_TutorialUITests.swift */,
+				FBCCEF9F26EA5404007DB9FF /* Info.plist */,
+			);
+			path = "Hobby TutorialUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FBCCEF7726EA5403007DB9FF /* Hobby Tutorial */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBCCEFA226EA5404007DB9FF /* Build configuration list for PBXNativeTarget "Hobby Tutorial" */;
+			buildPhases = (
+				FBCCEF7426EA5403007DB9FF /* Sources */,
+				FBCCEF7526EA5403007DB9FF /* Frameworks */,
+				FBCCEF7626EA5403007DB9FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Hobby Tutorial";
+			productName = "Hobby Tutorial";
+			productReference = FBCCEF7826EA5403007DB9FF /* Hobby Tutorial.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FBCCEF8D26EA5404007DB9FF /* Hobby TutorialTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBCCEFA526EA5404007DB9FF /* Build configuration list for PBXNativeTarget "Hobby TutorialTests" */;
+			buildPhases = (
+				FBCCEF8A26EA5404007DB9FF /* Sources */,
+				FBCCEF8B26EA5404007DB9FF /* Frameworks */,
+				FBCCEF8C26EA5404007DB9FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FBCCEF9026EA5404007DB9FF /* PBXTargetDependency */,
+			);
+			name = "Hobby TutorialTests";
+			productName = "Hobby TutorialTests";
+			productReference = FBCCEF8E26EA5404007DB9FF /* Hobby TutorialTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FBCCEF9826EA5404007DB9FF /* Hobby TutorialUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBCCEFA826EA5404007DB9FF /* Build configuration list for PBXNativeTarget "Hobby TutorialUITests" */;
+			buildPhases = (
+				FBCCEF9526EA5404007DB9FF /* Sources */,
+				FBCCEF9626EA5404007DB9FF /* Frameworks */,
+				FBCCEF9726EA5404007DB9FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FBCCEF9B26EA5404007DB9FF /* PBXTargetDependency */,
+			);
+			name = "Hobby TutorialUITests";
+			productName = "Hobby TutorialUITests";
+			productReference = FBCCEF9926EA5404007DB9FF /* Hobby TutorialUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FBCCEF7026EA5403007DB9FF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					FBCCEF7726EA5403007DB9FF = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					FBCCEF8D26EA5404007DB9FF = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = FBCCEF7726EA5403007DB9FF;
+					};
+					FBCCEF9826EA5404007DB9FF = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = FBCCEF7726EA5403007DB9FF;
+					};
+				};
+			};
+			buildConfigurationList = FBCCEF7326EA5403007DB9FF /* Build configuration list for PBXProject "Hobby Tutorial" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FBCCEF6F26EA5403007DB9FF;
+			productRefGroup = FBCCEF7926EA5403007DB9FF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FBCCEF7726EA5403007DB9FF /* Hobby Tutorial */,
+				FBCCEF8D26EA5404007DB9FF /* Hobby TutorialTests */,
+				FBCCEF9826EA5404007DB9FF /* Hobby TutorialUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FBCCEF7626EA5403007DB9FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBCCEF8826EA5404007DB9FF /* LaunchScreen.storyboard in Resources */,
+				FBCCEF8526EA5404007DB9FF /* Assets.xcassets in Resources */,
+				FBCCEF8326EA5403007DB9FF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBCCEF8C26EA5404007DB9FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBCCEF9726EA5404007DB9FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FBCCEF7426EA5403007DB9FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBCCEF8026EA5403007DB9FF /* ViewController.swift in Sources */,
+				FBCCEF7C26EA5403007DB9FF /* AppDelegate.swift in Sources */,
+				FBCCEF7E26EA5403007DB9FF /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBCCEF8A26EA5404007DB9FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBCCEF9326EA5404007DB9FF /* Hobby_TutorialTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBCCEF9526EA5404007DB9FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBCCEF9E26EA5404007DB9FF /* Hobby_TutorialUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FBCCEF9026EA5404007DB9FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FBCCEF7726EA5403007DB9FF /* Hobby Tutorial */;
+			targetProxy = FBCCEF8F26EA5404007DB9FF /* PBXContainerItemProxy */;
+		};
+		FBCCEF9B26EA5404007DB9FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FBCCEF7726EA5403007DB9FF /* Hobby Tutorial */;
+			targetProxy = FBCCEF9A26EA5404007DB9FF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FBCCEF8126EA5403007DB9FF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FBCCEF8226EA5403007DB9FF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FBCCEF8626EA5404007DB9FF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FBCCEF8726EA5404007DB9FF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FBCCEFA026EA5404007DB9FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FBCCEFA126EA5404007DB9FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FBCCEFA326EA5404007DB9FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X2UM5Y676M;
+				INFOPLIST_FILE = "Hobby Tutorial/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "mtec.Hobby-Tutorial";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FBCCEFA426EA5404007DB9FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X2UM5Y676M;
+				INFOPLIST_FILE = "Hobby Tutorial/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "mtec.Hobby-Tutorial";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FBCCEFA626EA5404007DB9FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X2UM5Y676M;
+				INFOPLIST_FILE = "Hobby TutorialTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "mtec.Hobby-TutorialTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hobby Tutorial.app/Hobby Tutorial";
+			};
+			name = Debug;
+		};
+		FBCCEFA726EA5404007DB9FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X2UM5Y676M;
+				INFOPLIST_FILE = "Hobby TutorialTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "mtec.Hobby-TutorialTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hobby Tutorial.app/Hobby Tutorial";
+			};
+			name = Release;
+		};
+		FBCCEFA926EA5404007DB9FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X2UM5Y676M;
+				INFOPLIST_FILE = "Hobby TutorialUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "mtec.Hobby-TutorialUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Hobby Tutorial";
+			};
+			name = Debug;
+		};
+		FBCCEFAA26EA5404007DB9FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X2UM5Y676M;
+				INFOPLIST_FILE = "Hobby TutorialUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "mtec.Hobby-TutorialUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Hobby Tutorial";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FBCCEF7326EA5403007DB9FF /* Build configuration list for PBXProject "Hobby Tutorial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBCCEFA026EA5404007DB9FF /* Debug */,
+				FBCCEFA126EA5404007DB9FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBCCEFA226EA5404007DB9FF /* Build configuration list for PBXNativeTarget "Hobby Tutorial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBCCEFA326EA5404007DB9FF /* Debug */,
+				FBCCEFA426EA5404007DB9FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBCCEFA526EA5404007DB9FF /* Build configuration list for PBXNativeTarget "Hobby TutorialTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBCCEFA626EA5404007DB9FF /* Debug */,
+				FBCCEFA726EA5404007DB9FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBCCEFA826EA5404007DB9FF /* Build configuration list for PBXNativeTarget "Hobby TutorialUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBCCEFA926EA5404007DB9FF /* Debug */,
+				FBCCEFAA26EA5404007DB9FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FBCCEF7026EA5403007DB9FF /* Project object */;
+}
