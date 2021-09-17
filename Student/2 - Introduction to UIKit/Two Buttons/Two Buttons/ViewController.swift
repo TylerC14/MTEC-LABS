@@ -20,12 +20,10 @@ class ViewController: UIViewController {
     }
     
     @IBAction func clearTextButtonTapped(_ sender: Any) {
-        if let text = textField.text {
-            if text == "" {
-                
-            }
+       
             Label.text = ""
-        }
+        textField.text = ""
+        
         
     }
     
