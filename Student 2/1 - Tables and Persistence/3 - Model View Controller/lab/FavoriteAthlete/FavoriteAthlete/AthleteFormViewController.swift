@@ -38,6 +38,12 @@ class AthleteFormViewController: UIViewController {
     }
     
     @IBAction func saveButton(_ sender: Any) {
+        guard let name = nameTextField.text,
+                let ageString = ageTextField.text,
+                let age = Int(ageString),
+                let league =  leagueTextField.text,
+                let team = teamTextField.text else {return}
+                athlete = Athlete(name: name, age: age, league: league, team: team)
     }
     // Do any additional setup after loading the view.
 
