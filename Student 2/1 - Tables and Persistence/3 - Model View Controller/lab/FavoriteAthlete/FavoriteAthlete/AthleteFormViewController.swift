@@ -20,18 +20,20 @@ class AthleteFormViewController: UIViewController {
         updateView()
     }
     
-    init?(coder: NSCoder, athlete:Athlete?) {
-        self.athlete = athlete
-        super.init(coder: coder)
-    }
+    init?(coder: NSCoder, athlete: Athlete?) {
+            self.athlete = athlete
+            super.init(coder: coder)
+        }
+        
+        required init?(coder: NSCoder) {
+            fatalError("init(coder:) has not been implemented")
+        }
+
     
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
     func updateView() {
         if let athlete = athlete {
             nameTextField.text = athlete.name
-            ageTextField.text = athlete.age
+            ageTextField.text = String (athlete.age)
             leagueTextField.text = athlete.league
             teamTextField.text = athlete.team
         }
@@ -44,6 +46,8 @@ class AthleteFormViewController: UIViewController {
                 let league =  leagueTextField.text,
                 let team = teamTextField.text else {return}
                 athlete = Athlete(name: name, age: age, league: league, team: team)
+        performSegue(withIdentifier: "unwindSegue", sender: self)
+        
     }
     // Do any additional setup after loading the view.
 

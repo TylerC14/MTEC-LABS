@@ -42,7 +42,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="Jdx-qb-Jda" kind="show" identifier="EditAthlete" id="lBM-ky-b8A"/>
+                                    <segue destination="Jdx-qb-Jda" kind="show" identifier="EditAthlete" destinationCreationSelector="editAthlete:sender:" id="lBM-ky-b8A"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -54,7 +54,7 @@
                     <navigationItem key="navigationItem" title="My Favorite Athletes" id="HkE-HG-Ylf">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="sEp-s4-2KD">
                             <connections>
-                                <segue destination="Jdx-qb-Jda" kind="show" identifier="AddAthlete" id="wJO-3P-Bh6"/>
+                                <segue destination="Jdx-qb-Jda" kind="show" identifier="addAthlete" destinationCreationSelector="addAthlete:" id="5zR-BX-RAw"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -146,15 +146,17 @@
                         <outlet property="leagueTextField" destination="Qwm-lN-Kse" id="Tq6-4d-8wH"/>
                         <outlet property="nameTextField" destination="9Ms-Uu-Heg" id="xbe-Ld-3eF"/>
                         <outlet property="teamTextField" destination="uqw-ia-7EH" id="bWa-KL-MGS"/>
+                        <segue destination="mij-IZ-VA9" kind="unwind" identifier="unwindSegue" unwindAction="unwindTableViewController:" id="Mca-tT-AsU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JRJ-p2-DTp" sceneMemberID="firstResponder"/>
+                <exit id="mij-IZ-VA9" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1860" y="139"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="lBM-ky-b8A"/>
+        <segue reference="5zR-BX-RAw"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
