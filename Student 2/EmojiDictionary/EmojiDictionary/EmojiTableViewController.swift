@@ -32,13 +32,21 @@ class EmojiTableViewController: UITableViewController {
               description: "A black-and-white checkered flag.", usage: "completion")
         ]
     
-
+    @IBAction func editButtonTapped(_ sender: UIBarButtonItem) {
+        let tableViewEditingMode = tableView.isEditing
+        
+        tableView.setEditing(!tableViewEditingMode, animated: true)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.leftBarButtonItem = editButtonItem
 
 
     }
 
+    
+    
     // MARK: - Table view data source
     
     
@@ -57,10 +65,27 @@ class EmojiTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "EmojiCell", for: indexPath)
         let emoji = emojis[indexPath.row]
+        
         cell.textLabel?.text = "\(emoji.symbol) - \(emoji.name)"
         cell.detailTextLabel?.text = emoji.description
-
+        cell.showsReorderControl = true
+        
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+        let emoji = emojis[indexPath.row]
+        print("\(emoji.symbol) \(indexPath)")
+    }
+    
+    override func tableView(_ tableView: UITableView, moveRowAt fromindexPath: IndexPath, to: IndexPath) {
+        let movedEmoji = emojis.remove(at: fromindexPath.row)
+        emojis.insert(movedEmoji, at: to.row)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        tableView.reloadData()
     }
 
 }
