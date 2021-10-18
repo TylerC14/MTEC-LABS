@@ -15,6 +15,8 @@
 		188F678023AC025B007E2064 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188F677F23AC025B007E2064 /* Book.swift */; };
 		188F678223AC0292007E2064 /* BookTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188F678123AC0292007E2064 /* BookTableViewController.swift */; };
 		188F678423AC0394007E2064 /* BookFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188F678323AC0394007E2064 /* BookFormViewController.swift */; };
+		FB34A5D2271DBA4700900501 /* BookTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB34A5D1271DBA4700900501 /* BookTableViewCell.swift */; };
+		FBFB6A8827172E3000F94A6C /* BookFormTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFB6A8727172E3000F94A6C /* BookFormTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		188F677F23AC025B007E2064 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		188F678123AC0292007E2064 /* BookTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookTableViewController.swift; sourceTree = "<group>"; };
 		188F678323AC0394007E2064 /* BookFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookFormViewController.swift; sourceTree = "<group>"; };
+		FB34A5D1271DBA4700900501 /* BookTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookTableViewCell.swift; sourceTree = "<group>"; };
+		FBFB6A8727172E3000F94A6C /* BookFormTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookFormTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,10 +69,12 @@
 				188F677F23AC025B007E2064 /* Book.swift */,
 				188F678123AC0292007E2064 /* BookTableViewController.swift */,
 				188F678323AC0394007E2064 /* BookFormViewController.swift */,
+				FBFB6A8727172E3000F94A6C /* BookFormTableViewController.swift */,
 				188F676B23AC01B0007E2064 /* SceneDelegate.swift */,
 				188F677223AC01B1007E2064 /* Assets.xcassets */,
 				188F677423AC01B1007E2064 /* LaunchScreen.storyboard */,
 				188F676F23AC01B0007E2064 /* Main.storyboard */,
+				FB34A5D1271DBA4700900501 /* BookTableViewCell.swift */,
 			);
 			path = FavoriteBooks;
 			sourceTree = "<group>";
@@ -143,8 +149,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBFB6A8827172E3000F94A6C /* BookFormTableViewController.swift in Sources */,
 				188F678023AC025B007E2064 /* Book.swift in Sources */,
 				188F676A23AC01B0007E2064 /* AppDelegate.swift in Sources */,
+				FB34A5D2271DBA4700900501 /* BookTableViewCell.swift in Sources */,
 				188F678223AC0292007E2064 /* BookTableViewController.swift in Sources */,
 				188F678423AC0394007E2064 /* BookFormViewController.swift in Sources */,
 				188F676C23AC01B0007E2064 /* SceneDelegate.swift in Sources */,
