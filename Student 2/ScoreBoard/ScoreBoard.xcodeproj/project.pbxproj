@@ -17,6 +17,9 @@
 		FB7D1216271F0A64001C479F /* ScoreBoardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7D1215271F0A64001C479F /* ScoreBoardUITests.swift */; };
 		FB7D1218271F0A64001C479F /* ScoreBoardUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7D1217271F0A64001C479F /* ScoreBoardUITestsLaunchTests.swift */; };
 		FB7D1225271F117E001C479F /* ScoreboardTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7D1224271F117E001C479F /* ScoreboardTableViewController.swift */; };
+		FBA06EF62720708800D91C25 /* PlayerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA06EF52720708800D91C25 /* PlayerTableViewCell.swift */; };
+		FBE7A2C727205B42007BA981 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE7A2C627205B42007BA981 /* Player.swift */; };
+		FBE7A2C9272068D9007BA981 /* AddEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE7A2C8272068D9007BA981 /* AddEditViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		FB7D1215271F0A64001C479F /* ScoreBoardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreBoardUITests.swift; sourceTree = "<group>"; };
 		FB7D1217271F0A64001C479F /* ScoreBoardUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreBoardUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		FB7D1224271F117E001C479F /* ScoreboardTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreboardTableViewController.swift; sourceTree = "<group>"; };
+		FBA06EF52720708800D91C25 /* PlayerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerTableViewCell.swift; sourceTree = "<group>"; };
+		FBE7A2C627205B42007BA981 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		FBE7A2C8272068D9007BA981 /* AddEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +111,9 @@
 				FB7D11F6271F0A63001C479F /* SceneDelegate.swift */,
 				FB7D11F8271F0A63001C479F /* ViewController.swift */,
 				FB7D11FA271F0A63001C479F /* Main.storyboard */,
+				FBA06EF52720708800D91C25 /* PlayerTableViewCell.swift */,
+				FBE7A2C8272068D9007BA981 /* AddEditViewController.swift */,
+				FBE7A2C627205B42007BA981 /* Player.swift */,
 				FB7D1224271F117E001C479F /* ScoreboardTableViewController.swift */,
 				FB7D11FD271F0A64001C479F /* Assets.xcassets */,
 				FB7D11FF271F0A64001C479F /* LaunchScreen.storyboard */,
@@ -261,10 +270,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBA06EF62720708800D91C25 /* PlayerTableViewCell.swift in Sources */,
 				FB7D11F9271F0A63001C479F /* ViewController.swift in Sources */,
 				FB7D1225271F117E001C479F /* ScoreboardTableViewController.swift in Sources */,
+				FBE7A2C9272068D9007BA981 /* AddEditViewController.swift in Sources */,
 				FB7D11F5271F0A63001C479F /* AppDelegate.swift in Sources */,
 				FB7D11F7271F0A63001C479F /* SceneDelegate.swift in Sources */,
+				FBE7A2C727205B42007BA981 /* Player.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

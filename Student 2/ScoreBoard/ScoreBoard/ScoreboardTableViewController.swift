@@ -8,37 +8,65 @@
 import UIKit
 
 class ScoreboardTableViewController: UITableViewController {
+    
+    @IBOutlet weak var playerLabel: UILabel!
+    @IBOutlet weak var scoreStepper: UIStepper!
+    @IBOutlet weak var scoreLabel: UILabel!
+    
+    
+    
+    
+    var players: [Player] = [
+        Player(name: "Player 1", score: 25)
+    ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+ 
     }
 
+    
+    
+    
+    @IBSegueAction func addEditPlayer(_ coder: NSCoder, sender: Any?) -> AddEditViewController? {
+        if let cell = sender as? UITableViewCell,
+           let indexPath = tableView.indexPath(for: cell) {
+            let playerToEdit = players[indexPath.row]
+        return AddEditViewController(coder: coder, player: playerToEdit)
+        } else {
+            return AddEditViewController(coder: coder, player: nil)
+        }
+    }
+    
+    
+    
+    
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
+  
         return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
+ 
         return 1
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "PlayerCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "PlayerCell", for: indexPath)as!PlayerTableViewCell
+        
+        let player = players[indexPath.row]
+        cell.update(with: player)
 
-        // Configure the cell...
 
         return cell
     }
+    
+
+    
     
 
     /*
