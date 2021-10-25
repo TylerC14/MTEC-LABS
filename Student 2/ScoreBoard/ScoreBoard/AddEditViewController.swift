@@ -10,6 +10,10 @@ import UIKit
 
 class AddEditViewController: UIViewController {
     
+    @IBOutlet weak var playerTextField: UITextField!
+    @IBOutlet weak var currentScoreTextField: UITextField!
+    @IBOutlet weak var saveButton: UIButton!
+    
     var player: Player?
     
     init?(coder: NSCoder, player: Player?) {
@@ -24,21 +28,40 @@ class AddEditViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-    
         
-
-        // Do any additional setup after loading the view.
+        if let player = player {
+            playerTextField.text = player.name
+            currentScoreTextField.text = String(player.score)
+            title = "Edit Player"
+        }   else {
+            title = "Add Player"
+        }
+            updateSaveButtonState()
+        
+    
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func saveButtonTapped(_ sender: Any) {
+        
     }
-    */
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let name = playerTextField.text ?? ""
+        let score = currentScoreTextField.text ?? ""
+        if let score = Int(score) {
+            player = Player(name: name, score: score)
+        }
+    }
+    
+    func updateSaveButtonState() {
+        let playerName = playerTextField.text ?? ""
+        let currentScore = currentScoreTextField.text ?? ""
+        saveButton.isEnabled = !playerName.isEmpty && !currentScore.isEmpty
+    }
+    
+    @IBAction func  textEditingChanged(_ sender: UITextField) {
+        updateSaveButtonState()
+    }
+    
 
 }

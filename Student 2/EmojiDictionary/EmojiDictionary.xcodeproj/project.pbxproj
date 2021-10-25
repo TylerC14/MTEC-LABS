@@ -18,6 +18,7 @@
 		FB8391A027149929007B5C10 /* Emoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB83919F27149929007B5C10 /* Emoji.swift */; };
 		FB8391A227149B23007B5C10 /* EmojiTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8391A127149B23007B5C10 /* EmojiTableViewController.swift */; };
 		FBB3DBCE2721BDBB00C3EF0C /* EmojiTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB3DBCD2721BDBB00C3EF0C /* EmojiTableViewCell.swift */; };
+		FBD501902722F73B0009D06B /* AddEditEmojiTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD5018F2722F73B0009D06B /* AddEditEmojiTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		FB83919F27149929007B5C10 /* Emoji.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emoji.swift; sourceTree = "<group>"; };
 		FB8391A127149B23007B5C10 /* EmojiTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiTableViewController.swift; sourceTree = "<group>"; };
 		FBB3DBCD2721BDBB00C3EF0C /* EmojiTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiTableViewCell.swift; sourceTree = "<group>"; };
+		FBD5018F2722F73B0009D06B /* AddEditEmojiTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditEmojiTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 		FB839161271498A0007B5C10 = {
 			isa = PBXGroup;
 			children = (
+				FBD5018F2722F73B0009D06B /* AddEditEmojiTableViewController.swift */,
 				FBB3DBCD2721BDBB00C3EF0C /* EmojiTableViewCell.swift */,
 				FB83916C271498A0007B5C10 /* EmojiDictionary */,
 				FB839183271498A1007B5C10 /* EmojiDictionaryTests */,
@@ -264,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBD501902722F73B0009D06B /* AddEditEmojiTableViewController.swift in Sources */,
 				FB8391A227149B23007B5C10 /* EmojiTableViewController.swift in Sources */,
 				FB8391A027149929007B5C10 /* Emoji.swift in Sources */,
 				FBB3DBCE2721BDBB00C3EF0C /* EmojiTableViewCell.swift in Sources */,

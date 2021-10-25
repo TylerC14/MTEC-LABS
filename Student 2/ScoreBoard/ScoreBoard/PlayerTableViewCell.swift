@@ -20,6 +20,8 @@ class PlayerTableViewCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
     }
+    
+    
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
@@ -34,7 +36,9 @@ class PlayerTableViewCell: UITableViewCell {
         
         playerLabel.text = player.name
         
-        
     }
-
+    
+    @IBAction func playerStepperValueChanged(_ sender: Any) {
+    }
+    
 }

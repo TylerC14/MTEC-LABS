@@ -7,6 +7,7 @@
 
 import UIKit
 
+
 class EmojiTableViewController: UITableViewController {
     
     var emojis: [Emoji] = [] {
@@ -26,8 +27,41 @@ class EmojiTableViewController: UITableViewController {
         navigationItem.leftBarButtonItem = editButtonItem
 
         emojis = Emoji.loadFromFile()
+        
+        tableView.rowHeight = UITableView.automaticDimension
+        tableView.estimatedRowHeight = 44.0
     }
+    
+    @IBAction func unwindToEmojiTableView(segue: UIStoryboardSegue) {
+        guard  segue.identifier == "saveUnwind",
+               let sourceViewController = segue.source
+                as? AddEditEmojiTableViewController,
+               let emoji =  sourceViewController.emoji else { return }
+        
+        if let selectedIndexPath = tableView.indexPathForSelectedRow {
+            emojis[selectedIndexPath.row] = emoji
+            tableView.reloadRows(at: [selectedIndexPath], with: .none)
+        }   else {
+            emojis.append(emoji)
+            let newIndexPath = IndexPath(row: emojis.count - 1, section: 0)
+            tableView.insertRows(at: [newIndexPath], with: .automatic)
+        }
+    }
+    
+    
 
+    @IBSegueAction func addEditEmoji(_ coder: NSCoder, sender: Any?) -> AddEditEmojiTableViewController? {
+        if let cell = sender as? UITableViewCell,
+           let indexPath = tableView.indexPath(for: cell) {
+            let emojiToEdit = emojis[indexPath.row]
+            return AddEditEmojiTableViewController(coder: coder, emoji: emojiToEdit)
+        }   else {
+            return AddEditEmojiTableViewController(coder: coder, emoji: nil)
+        }
+        
+    }
+    
+    
     
     
     // MARK: - Table view data source
@@ -57,11 +91,6 @@ class EmojiTableViewController: UITableViewController {
         //cell.showsReorderControl = true
         
         return cell
-    }
-    
-    override func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
-        let emoji = emojis[indexPath.row]
-        print("\(emoji.symbol) \(indexPath)")
     }
     
     override func tableView(_ tableView: UITableView, moveRowAt fromindexPath: IndexPath, to: IndexPath) {
