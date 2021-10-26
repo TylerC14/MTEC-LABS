@@ -18,7 +18,7 @@ class PlayerTableViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
     }
     
     
@@ -26,19 +26,26 @@ class PlayerTableViewCell: UITableViewCell {
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
-        // Configure the view for the selected state
+        
     }
     
     func update(with player: Player) {
         let scoreLabelAsInt = player.score
         scoreLabel.text = String(scoreLabelAsInt)
-        
+        playerStepper.value = Double(player.score)
         
         playerLabel.text = player.name
         
+        
+    }
+    
+    func updatePlayerStepper() {
+        scoreLabel.text = "\(Int(playerStepper.value))"
     }
     
     @IBAction func playerStepperValueChanged(_ sender: Any) {
+        print((sender as? UIStepper)?.value)
+        updatePlayerStepper()
     }
     
 }

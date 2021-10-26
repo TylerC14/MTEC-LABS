@@ -17,9 +17,6 @@ class ScoreboardTableViewController: UITableViewController {
         super.viewDidLoad()
         
         
-//        playerStepper.wraps = true
-//        playerStepper.autorepeat = true
-//        playerStepper.maximumValue = 50
         
 
         tableView.reloadData()
@@ -35,13 +32,11 @@ class ScoreboardTableViewController: UITableViewController {
         if let selectedIndexPath = tableView.indexPathForSelectedRow {
             players[selectedIndexPath.row] = player
             tableView.reloadRows(at: [selectedIndexPath], with: .none)
+        } else {
+            players.append(player)
         }
-        
-        players.append(player)
-        let newIndexPath = IndexPath(row: players.count - 1, section: 0)
         tableView.reloadData()
     }
-    
     
     @IBSegueAction func addEditPlayer(_ coder: NSCoder, sender: Any?) -> AddEditViewController? {
         if let cell = sender as? UITableViewCell,
