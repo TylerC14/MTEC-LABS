@@ -61,7 +61,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="descriptionLabel" destination="ood-du-ybw" id="PLY-ji-BRv"/>
-                                    <outlet property="nameLabel" destination="ood-du-ybw" id="KGV-L8-MOf"/>
+                                    <outlet property="nameLabel" destination="kBY-JA-tBv" id="PDU-O2-UyC"/>
                                     <outlet property="symbolLabel" destination="DqL-sf-6dC" id="02N-mx-vEg"/>
                                     <segue destination="SqW-4B-JRn" kind="presentation" id="kaf-wq-Fdk"/>
                                 </connections>
