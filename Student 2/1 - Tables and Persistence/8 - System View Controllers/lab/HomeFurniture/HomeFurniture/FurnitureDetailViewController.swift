@@ -80,8 +80,9 @@ class FurnitureDetailViewController: UIViewController, UINavigationControllerDel
     }
     
     @IBAction func actionButtonTapped(_ sender: Any) {
-        
+        func UIActivityViewController (_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
     }
     
 }
 
+}
